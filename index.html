@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            label{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>My Bio Data</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">FirstName:</label>
+                <input type="text" id="fname" placeholder="First Name">
+                <label for="lname">LastName:</label>
+                <input type="text" id="lname" placeholder="Last Name"><br><br>
+                <label for="M">Male:</label>
+                <input type="radio" id="M" name="gender">
+                <label for="F">Female:</label>
+                <input type="radio" id="F" name="gender">
+                <label for="O">Other:</label>
+                <input type="radio" id="O" name="gender"><br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob"><br><br>
+                <label for="mail">E-Mail:</label>
+                <input type="email" id="mail" placeholder="Enter your Email"><br><br>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+91" minlength="10" maxlength="10" required><br><br>
+                <label for="H">Height</label>
+                <input type="text" id="H" placeholder="Height in Feet" min="0" max="10">
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <label for="school">School Name:</label>
+                <input type="text" id="school" placeholder="School Name"><br><br>
+                <label for="class">Class:</label>
+                <input type="text" id="class" placeholder="Enter Class"><br><br>
+                <label for="stream">Stream:</label>
+                <select id="stream">
+                    <option value="s">Stream</option>
+                    <option value="pcm">PCM</option>
+                    <option value="pcb">PCB</option>
+                    <option value="com">Commerce Maths</option>
+                    <option value="ah">Arts and Humanities</option>
+                </select>
+                <br><br>
+                <label for="mark">Marksheet:</label>
+                <input type="file" id="mark" >
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
